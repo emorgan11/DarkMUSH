@@ -222,6 +222,7 @@ requires="5.00"
 		["35"] = "curse",
 		["103"] = "sleep",
 		["374"] = "surge",
+		["8"] = "bless", -- bless, detect_invis it bitvector 8, so putting here?
 		["hungry"] = "hungry",
 		["thirsty"] = "thirsty",
 		["94"] = "sanctuary",
@@ -279,6 +280,7 @@ requires="5.00"
 		["95"] = "magic_barrier", -- magic barrier
 		["356"] = "immunity", -- immunity
 		["355"] = "calm", 
+		["145"] = "ward", --racial_magic_barrier
 		["146"] = "fireshield", 
 		["147"] = "frostshield",
 		["84"] = "evil_protect", -- evil protection
@@ -310,7 +312,9 @@ requires="5.00"
 		["150"] = "mind_focus",
 		["411"] = "rotting_flesh", -- need non-placeholder image
 		["327"] = "enhanced_strength", -- need non-placeholder image
-		["60"] = "giant_strength" -- need non-placeholder image	
+		["60"] = "giant_strength", -- need non-placeholder image
+		["71"] = "gaeas_embrace" -- need non-placeholder image
+		--["41"] = detect_magic" -- c 'detect magic'
 	}
 	
 	-- We are using this as a set, these affects should be removed from the window
@@ -338,6 +342,7 @@ requires="5.00"
 		swift = true,
 		fireshield = true,
 		frostshield = true,
+		ward = true,
 		hide = true,
 		sneak = true,
 		shadow_decoy = true,
@@ -1752,6 +1757,7 @@ function SpellUp()
         swift = true,
         fireshield = true,
         frostshield = true,
+		ward = true,
         hide = true,
         sneak = true,
         heighten_senses = true
